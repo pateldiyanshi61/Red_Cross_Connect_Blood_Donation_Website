@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Cross Connect</title>
+  <link rel="stylesheet" href="./assets/css/style.css"> 
+</head>
+<body id="top">
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <ul class="contact-list">
+          <li class="contact-item">
+            <ion-icon name="mail-outline"></ion-icon>
+            <a href="mailto:redcrossconnect78@gmail.com" class="contact-link">redcrossconnect78@gmail.com</a>
+          </li>
+          <li class="contact-item">
+            <ion-icon name="call-outline"></ion-icon>
+            <a href="tel:+913123456897" class="contact-link">+91-3123-456-897</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-bottom" data-header>
+      <div class="container">
+        <a href="#" class="logo">Red Cross Connect</a>
+        <nav class="navbar container" >
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html" class="navbar-link" >Home</a>
+            </li>
+            <li>
+              <a href="index.html#service" class="navbar-link" >Find donor</a>
+            </li>
+            <li>
+              <a href="#about" class="navbar-link" >About Us</a>
+            </li>
+            <li>
+              <a href="contact.html" class="navbar-link" >Contact</a>
+            </li>
+          </ul>
+        </nav>
+         <a href="register.php" class="btn">Login / Register</a> -->
+        <button class="nav-toggle-btn" aria-label="Toggle menu" >
+          <ion-icon name="menu-sharp" aria-hidden="true" class="menu-icon"></ion-icon>
+          <ion-icon name="close-sharp" aria-hidden="true" class="close-icon"></ion-icon>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <section class="section hero" id="home" style="background-image: url('./assets/images/mainbg.jpg')"
+        aria-label="hero">
+        <div class="container">
+          <div class="hero-content">
+            <img src="assets/images/blood-icon.png" alt="ICON" width="70" height="70"> 
+            <p class="section-subtitle">Welcome To Red Cross Connect</p>
+            <h2 class="h2 hero-title">United for Red Cross, United for Life</h2>
+            <p class="hero-text">
+              Our mission is to save lives by connecting willing donors with those in need of life-saving blood. 
+              We strive to create a compassionate community, raise awareness, and ensure accessible, regular 
+              donations, ultimately making a lasting impact on healthcare and well-being.
+            </p>
+          </div>
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.jpg" width="587" height="839" alt="hero banner" class="w-100">
+          </figure>
+        </div>
+      </section>
+
+      <section class="section service" id="service" aria-label="service">
+        <div class="container">
+          <p class="section-subtitle text-center">Find the best Donor For You</p>
+          <h2 class="h2 section-title text-center">FIND DONOR</h2>
+
+          <form class="donor-form" method="post" action="database.php">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              <br>
+
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" required>
+              <br>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <br>
+
+              <label for="blood-type">Blood Type:</label>
+              <select id="blood-type" name="blood-type">
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+              </select>
+              <br><br>
+
+              <label for="city">City:</label>
+              <input type="text" id="city" name="city" required>
+              <br>
+
+              <label for="state">State:</label>
+              <input type="text" id="state" name="state" required>
+            </div>
+
+            <button type="submit" class="btn">Find Donor</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.jpg" width="470" height="538" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+          <div class="about-content">
+            <p class="section-subtitle">About Us</p>
+            <h2 class="h2 section-title">Your Loved Ones Are Our Top Priority</h2>
+            <p class="section-text section-text-1">
+              At Red Cross Connect, we are deeply dedicated to forging vital connections between blood donors and 
+              recipients, closing the gap in the healthcare sector. Our mission is to deliver a streamlined and 
+              efficient experience, guaranteeing timely access to life-saving blood transfusions for all in need.
+            </p>
+            <p class="section-text">
+              We are committed to nurturing a community that thrives on empathy, support, and solidarity. Whether 
+              you're an aspiring donor or an individual seeking life-saving blood, we are here to guide you through 
+              the entire process with care and support. Join us at Red Stream as we strive to make a profound 
+              impact, one drop at a time.
+            </p>
+            <a href="about.html" class="btn">Read more About Us</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section doctor" aria-label="doctor">
+        <div class="container">
+          <p class="section-subtitle text-center">Emergency !</p>
+          <h2 class="h2 section-title text-center">Our other services</h2>
+          <ul class="has-scrollbar">
+            <li class="scrollbar-item">
+              <div class="doctor-card">
+                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
+                  <img src="./assets/images/calender.jpg" width="460" height="500" loading="lazy" alt="PREBOOK"
+                    class="img-cover">
+                </div>
+                <h3 class="h3">
+                  <a href="#" class="card-title">Pre Book Blood</a>
+                </h3>
+                <p class="card-subtitle">Book Blood For An upcoming Date</p>
+              </div>
+            </li>
+            <li class="scrollbar-item">
+              <div class="doctor-card">
+                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
+                  <img src="./assets/images/ambulance.jpg" width="460" height="500" loading="lazy" alt="AMBULANCE"
+                    class="img-cover">
+                </div>
+                <h3 class="h3">
+                  <a href="#" class="card-title">Call Ambulance</a>
+                </h3>
+                <p class="card-subtitle">Get our ambulance service</p>
+              </div>
+            </li>
+            <li class="scrollbar-item">
+              <div class="doctor-card">
+                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
+                  <img src="./assets/images/why.jpg" width="460" height="500" loading="lazy" alt="WHY DONATE ?"
+                    class="img-cover">
+                </div>
+                <h3 class="h3">
+                  <a href="donoreducation.html" class="card-title">Donor Education</a>
+                </h3>
+                <p class="card-subtitle">Why donate blood?</p>
+              </div>
+            </li>
+            <li class="scrollbar-item">
+              <div class="doctor-card">
+                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
+                  <img src="./assets/images/think.jpg" width="460" height="500" loading="lazy" alt="CAN YOU DONATE"
+                    class="img-cover">
+                </div>
+                <h3 class="h3">
+                  <a href="eligibilityinformation.html" class="card-title">Eligibiliy Information</a>
+                </h3>
+                <p class="card-subtitle">Check that can you donate blood</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top section">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="#" class="logo">Red Cross Connect</a>
+          <p class="footer-text">
+            We are passionate about connecting blood donors with recipients and bridging the gap in the healthcare
+            industry. We strive to create a community that fosters empathy, support, and solidarity among 
+            individuals who are committed to making a difference.
+          </p>
+          <div class="schedule">
+            <div class="schedule-icon">
+              <ion-icon name="time-outline"></ion-icon>
+            </div>
+            <span class="span">
+              24 X 7:<br>
+              365 Days
+            </span>
+          </div>
+        </div>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Other Links</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Find donor</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">About us</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Contact</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Login / Register</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Our Services</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">xxxxxxxxx</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">xxxxxxxxx</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">xxxxxxxxx</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">xxxxxxxxx</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">xxxxxxxxx</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">xxxxxxxxx</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Contact Us</p>
+          </li>
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <a href="https://maps.app.goo.gl/YCna81aBf5TxU6GfA" target="_blank">
+            <address class="item-text">
+              Knowledge Corridor, Raisan <br>
+              Village, PDPU Rd, Gandhinagar,<br>
+              Gujarat 382007
+            </address>
+          </a>
+          </li>
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+            <a href="tel:+913123456897" class="footer-link">+91-3123-456-879</a>
+          </li>
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <a href="mailto:redcrossconnect78@gmail.com" class="footer-link">redcrossconnect78@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2024 All Rights Reserved by Red Cross Connect
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <script src="./assets/js/script.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
